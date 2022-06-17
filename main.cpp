@@ -4,7 +4,31 @@
 #include "class_student.cpp"
 //Проект складається з main.cpp, class_student.cpp and class_list.cpp
 void show(List& list);
-int main(){
+int main(int argc, char* argv[]){
+	if(argc != 1){
+	std::string string = argv[1];
+	if(string == "-help"){
+		std::cout << "Hello! I will give you short tutor how to use this small program." << std::endl;
+		std::cout << "It can be a bit buggy, sorry for that." << std::endl;
+		std::cout << "You have one structure(at some point like std::list)." << std::endl;
+		std::cout << "You can /add students, /remove students, /show all students data, /find number of students with speciall properties," << std::endl;
+		std::cout << "also you can quit with /end." << std::endl;
+		std::cout << "Here is examples of commands:" << std::endl;
+		std::cout << "/add -Inna -95.55 -true" << std::endl;
+		std::cout << "/add -name -avarage_grade -dancing_status (Name must start with capital and after lowcase letters!)" << std::endl;
+		std::cout << "/remove -0" << std::endl;
+		std::cout << "/remove -index (starts at 0!)" << std::endl;
+		std::cout << "/show" << std::endl;
+		std::cout << "/find" << std::endl;
+		std::cout << "/end" << std::endl;
+		std::cout << "Also names must be: Ivan, Oleksiy, Petro, Kateryna, Alina, Alla, Bohdana, Daryna, Inna, Kseniya." <<  std::endl;
+		std::cout << "Also grades must be from 10 to 100." <<  std::endl;
+		std::cout << "Also dancing status must be true or false." <<  std::endl;
+		std::cout << "Start program without -help parameter to work with it." << std::endl;
+		return 0;
+	}}
+
+
 	List list;
 	std::string str = "";
 	std::getline(std::cin, str);
@@ -85,6 +109,7 @@ int main(){
 
 		if(str.substr(0,4) != "/end               "){//Випадок коли введено щось незрозуміле
 			std::cout << "What do you mean? Try again." << '\n';
+			std::getline(std::cin, str);
 		}
 	}
 	

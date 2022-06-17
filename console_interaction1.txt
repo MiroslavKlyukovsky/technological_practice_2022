@@ -1,0 +1,38 @@
+miroslav@miroslav-GF63-Thin-9RCX:~/Desktop/University/technological_practice_2022/technological_practice_2022$ ./a.out -help
+Hello! I will give you short tutor how to use this small program.
+It can be a bit buggy, sorry for that.
+You have one structure(at some point like std::list).
+You can /add students, /remove students, /show all students data, /find number of students with speciall properties,
+also you can quit with /end.
+Here is examples of commands:
+/add -Inna -95.55 -true
+/add -name -avarage_grade -dancing_status (Name must start with capital and after lowcase letters!)
+/remove -0
+/remove -index (starts at 0!)
+/show
+/find
+/end
+Also names must be: Ivan, Oleksiy, Petro, Kateryna, Alina, Alla, Bohdana, Daryna, Inna, Kseniya.
+Also grades must be from 10 to 100.
+Also dancing status must be true or false.
+Start program without -help parameter to work with it.
+miroslav@miroslav-GF63-Thin-9RCX:~/Desktop/University/technological_practice_2022/technological_practice_2022$ ./a.out
+/add -Oleksiy -100 -true
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Oleksiy                100                    1
+/add -Bohdana -90.2 -false
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Oleksiy                100                    1
+     Bohdana                90.2                    0
+/add -Ivan -90 -false
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Oleksiy                100                    1
+     Bohdana                90.2                    0
+     Ivan                90                    0
+/remove -2
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Oleksiy                100                    1
+     Bohdana                90.2                    0
+/end
+miroslav@miroslav-GF63-Thin-9RCX:~/Desktop/University/technological_practice_2022/technological_practice_2022$ 
+

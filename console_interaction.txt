@@ -1,0 +1,41 @@
+miroslav@miroslav-GF63-Thin-9RCX:~/Desktop/University/technological_practice_2022/technological_practice_2022$ ./a.out 
+dlksmd
+What do you mean? Try again.
+/ad -111
+What do you mean? Try again.
+/add -Petro -89.4 -true
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Petro                89.4                    1
+/add -Inna -97.45 -true
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Petro                89.4                    1
+     Inna                97.45                    1
+/add -Ivan -90.45 -false
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Petro                89.4                    1
+     Inna                97.45                    1
+     Ivan                90.45                    0
+/remove -2
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Petro                89.4                    1
+     Inna                97.45                    1
+/add -Alla -89.55 -true
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Petro                89.4                    1
+     Inna                97.45                    1
+     Alla                89.55                    1
+/find
+1
+add -Ivan -100 -true
+What do you mean? Try again.
+/add -Ivan -100 -true
+<<   Name   >>  <<   Avarage Grade   >>  <<   Dancing   >>
+     Petro                89.4                    1
+     Inna                97.45                    1
+     Alla                89.55                    1
+     Ivan                100                    1
+/find
+2
+/end
+miroslav@miroslav-GF63-Thin-9RCX:~/Desktop/University/technological_practice_2022/technological_practice_2022$ 
+
